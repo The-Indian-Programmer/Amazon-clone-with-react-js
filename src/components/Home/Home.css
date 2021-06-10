@@ -1,0 +1,13 @@
+#carouselExampleControls{
+    height: 360px!important;
+}
+.carousel-inner{
+    height: 100%;
+}
+
+.products_container{
+   margin-top: 10px;
+}
+.books{
+    margin:auto;
+}

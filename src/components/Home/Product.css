@@ -1,0 +1,28 @@
+.card-img-top{
+    height: 171px;
+    width: 51%;
+    display: block;
+    margin: auto;
+}
+.addtocartbtn{
+    background-color: #febd69;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+.card{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.addtocartbtn:hover{
+    background-color: black;
+    color: #febd69;
+}
+.price{
+    font-size: 15px;
+}
+.price_rate{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}

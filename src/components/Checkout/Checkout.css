@@ -1,0 +1,23 @@
+.checkout{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: max-content;
+    background-color: white;
+}
+.checkout .checkout_left{
+    flex: 0.60;
+}
+.checkout .checkout_right{
+    flex: 0.40;
+}
+.checkout_title{
+    color: rgb(49, 49, 49);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.subtotal{
+    margin-left: 20px;
+    margin-right: 20px;
+}
