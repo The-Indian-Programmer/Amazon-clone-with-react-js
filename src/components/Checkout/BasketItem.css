@@ -1,0 +1,52 @@
+.basket_item{
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+    height: 240px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eff2f5;
+    -webkit-box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 10px gray;
+}
+.basket_item .basket_image{
+    flex: 0.40;
+    height: 200px;
+    width: 70px;
+}
+.basket_item .basket_item_info{
+    flex: 0.60;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.basket_item .basket_item_info .basket_item_name{
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.basket_item .basket_item_info .basket_item_desc{
+    margin: 0;
+    padding: 0;
+}
+.basket_item .basket_item_info .basket_item_price{
+    font-weight: bold;
+}
+.basket_item .basket_item_info .basket_item_price .rate{
+    font-size: large;
+}
+.removeBtn{
+    background-color: #febd69;
+    font-weight: bold;
+    color: black;
+    padding: 10px ;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.removeBtn:hover{
+    background-color: #ecbf83;
+   
+}

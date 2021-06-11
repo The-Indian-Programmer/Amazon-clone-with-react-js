@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+.login_form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.signinlogo{
+    height: 200px;
+    width: auto;
+}
+
+
+.container_login{
+    -webkit-box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 10px gray;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 550px;
+    padding: 20px;
+}
+.container_login .email{
+    display: flex;
+    flex-direction: column;
+}
+.container_login label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.container_login .email_input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.container_login .password{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.container_login .password_input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.container_login .login_text{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sign{
+    margin-top: 20px;
+}
+.signin_btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #febd69;
+    width: 100%;
+    font-weight: bold;
+}

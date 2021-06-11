@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartSharpIcon from "@material-ui/icons/ShoppingCartSharp";
 import { IconButton } from "@material-ui/core";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import {register} from "../../action/index";
 const Header = () => {
+  const basketvalue = useSelector((state) => state.basket);
+
+  const registration = useSelector((state) => state.register);
+  
+  
+  
+
   return (
     <div className="header">
       <Link to="/">
@@ -25,14 +34,18 @@ const Header = () => {
       </div>
 
       <div className="header_right">
-        <div className="header_option">
-          <div className="option_line_n">
-            <span>Hello</span>
+        <Link to="/login">
+          <div className="header_option">
+            <div className="option_line_n">
+              <span>Hello</span>
+            </div>
+            <div className="option_line_two">
+              <span>
+                SignIn
+              </span>
+            </div>
           </div>
-          <div className="option_line_two">
-            <span>SignIn</span>
-          </div>
-        </div>
+        </Link>
         <div className="header_option">
           <div className="option_line_n">
             <span>Returns</span>
@@ -55,7 +68,7 @@ const Header = () => {
               <ShoppingCartSharpIcon />
             </div>
             <div className="option_line_two">
-              <span>5</span>
+              <span>{basketvalue.length}</span>
             </div>
           </div>
         </Link>
