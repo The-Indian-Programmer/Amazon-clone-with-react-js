@@ -19,4 +19,11 @@ export const registerUser = (data) =>{
     }
 }
 
+export const signinUser = (data) =>{
+    return {
+        type:"SIGNIN",
+        payload:data
+    }
+}
+
 

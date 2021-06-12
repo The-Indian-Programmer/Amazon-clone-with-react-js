@@ -39,6 +39,8 @@
     flex-direction: row;
     align-items: center;
     color: white;
+    justify-content: space-evenly;
+
 }
 .header .header_right .header_option{
     flex: 0.30;

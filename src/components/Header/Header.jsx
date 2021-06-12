@@ -10,8 +10,12 @@ const Header = () => {
   const basketvalue = useSelector((state) => state.basket);
 
   const registration = useSelector((state) => state.register);
-  
-  
+  let email;
+  if( Object.entries(registration).length === 0 ){
+    email = "SignIn"
+  }else{
+    email = registration.user.email.split("@")[0];
+  }
   
 
   return (
@@ -41,7 +45,7 @@ const Header = () => {
             </div>
             <div className="option_line_two">
               <span>
-                SignIn
+                {email}
               </span>
             </div>
           </div>

@@ -5,7 +5,12 @@ const register = (state = initialState, action) => {
   /// We have to inc/dec number so create function changeTheNumber which takes two arguments state(a variable) and action (which action we have to perform which we have declared in action/index.js file)
 
   switch (action.type) {
-    case "REGISTER": /// For the increment action which we had defined in action/index.js
+    case "REGISTER": 
+      state = action.payload
+      return state;
+      break;
+
+    case "SIGNIN": 
       state = action.payload
       return state;
       break;

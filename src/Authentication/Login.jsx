@@ -1,11 +1,26 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
+import {db,auth} from "../secret/Firebasecode"
+import {useSelector,useDispatch} from "react-redux";
+import {signinUser} from "../action";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const history = useHistory();
+  const dispatch = useDispatch();
+  const signinuser = ()=>{
+    auth.signInWithEmailAndPassword(email,password)
+        .then((auth)=>{
+            if(auth){
+              dispatch(signinUser(auth))
+              history.push("/")
+              setEmail("")
+              setPassword("")
+            }
+        }).catch((error)=> alert(error.message))
+  }
   return (
     <div className="login_form">
       <div className="container_login">
@@ -34,7 +49,7 @@ const Login = () => {
         </div>
 
         <div className="sign">
-          <button type="submit" className="signin_btn">
+          <button type="submit" onClick={signinuser} className="signin_btn">
             SignIn
           </button>
         </div>

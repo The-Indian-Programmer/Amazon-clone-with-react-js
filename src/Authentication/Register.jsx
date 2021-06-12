@@ -6,7 +6,6 @@ import {db,auth} from "../secret/Firebasecode"
 import {useSelector,useDispatch} from "react-redux";
 import {registerUser} from "../action";
 const Register = () => {
-    const registration = useSelector((state) => state.register);
     const dispatch = useDispatch();
 
 
